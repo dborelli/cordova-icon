@@ -1,3 +1,11 @@
+/*
+
+Customized by Danato Borelli, Taco Inc.
+Based on cordova-icon
+https://github.com/AlexDisler/cordova-icon
+
+*/
+
 var fs     = require('fs');
 var xml2js = require('xml2js');
 var ig     = require('imagemagick');
@@ -18,7 +26,11 @@ var getPlatforms = function (projectName) {
         name : 'ios',
         // TODO: use async fs.exists
         isAdded : fs.existsSync('platforms/ios'),
-        iconsPath : 'platforms/ios/' + projectName + '/Resources/icons/',
+
+        //original, removed by DB
+        //iconsPath : 'platforms/ios/' + projectName + '/Resources/icons/',
+        iconsPath : 'platforms/ios/' + projectName + '/Images.xcassets/Appicon.appiconset/',
+
         icons : [
             { name : 'icon-40.png',       size : 40  },
             { name : 'icon-40@2x.png',    size : 80  },
