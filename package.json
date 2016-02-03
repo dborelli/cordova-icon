@@ -1,6 +1,6 @@
 {
-  "name": "cordova-icon",
-  "version": "0.3.0",
+  "name": "cordova-taco-icon",
+  "version": "0.1.0",
   "description": "Automatic icon resizing for Cordova",
   "main": "index.js",
   "preferGlobal": "true",
@@ -12,19 +12,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/AlexDisler/cordova-icon.git"
+    "url": "git://github.com/dborelli/cordova-icon.git"
   },
   "keywords": [
     "cordova",
     "icon",
     "resize"
   ],
-  "author": "Alex Disler",
+  "author": "Danato Borelli",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AlexDisler/cordova-icon/issues"
+    "url": "https://github.com/dborelli/cordova-icon/issues"
   },
-  "homepage": "https://github.com/AlexDisler/cordova-icon",
+  "homepage": "https://github.com/dborelli/cordova-icon",
   "dependencies": {
     "imagemagick": "^0.1.3",
     "underscore": "^1.6.0",

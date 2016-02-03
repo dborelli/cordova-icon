@@ -247,6 +247,8 @@ var configFileExists = function () {
     return deferred.promise;
 };
 
+console.log('Running custom Taco version of cordova-icon');
+
 display.header('Checking Project & Icon');
 
 atLeastOnePlatformFound()
