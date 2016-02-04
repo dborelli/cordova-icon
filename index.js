@@ -75,6 +75,8 @@ var getPlatforms = function (projectName) {
  */
 var settings = {};
 settings.CONFIG_FILE = 'config.xml';
+
+//Just a note here...can't use relative path for this, imagemagick chokes on it
 settings.ICON_FILE   = 'icon.png';
 
 /**
@@ -127,7 +129,6 @@ var getProjectName = function () {
  */
 var generateIcon = function (platform, icon) {
     var deferred = Q.defer();
-    console.log('hit generate icon');
     ig.resize({
         srcPath: settings.ICON_FILE,
         dstPath: platform.iconsPath + icon.name,
