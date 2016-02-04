@@ -129,6 +129,7 @@ var getProjectName = function () {
  */
 var generateIcon = function (platform, icon) {
     var deferred = Q.defer();
+    console.log('hit generate icon');
     ig.resize({
         srcPath: settings.ICON_FILE,
         dstPath: platform.iconsPath + icon.name,
